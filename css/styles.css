@@ -13,6 +13,23 @@ font-family:  'Roboto', sans-serif;
 font-size: 14px;
 letter-spacing: 0,03em;
 }
+h1,h2,h3,p{
+  margin: 0;
+}
+html{
+  box-sizing: border-box;
+}
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address{
+  font-style: normal;
+}
 a{
   text-decoration: none;
   color: currentColor;
@@ -20,7 +37,58 @@ a{
 ul{
   list-style-type: none;
 }
-.section {
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.cards{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.images{
+  display: flex;
+  padding: 32px;
+  gap: 10px;
+}
+.images-secundary{
+  background-color: #F5F4FA;
+  height: 648px;
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+.cards{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.cards-second{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.cards-third{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.principal-section {
   color: #ffffff;
   font-style: normal;
   font-weight: 700;
@@ -44,6 +112,7 @@ ul{
   font-weight: 500;
   line-height: 16px;
   color: #757575
+  
 }
 .link:hover{
   color: var(--main-color);
@@ -64,7 +133,10 @@ ul{
   color: #212121;
   font-style: normal;
   font-weight: 700;
+  text-align: center;
+  margin: 16px;
   line-height: 16px
+
 }
 .third-title{
   font-style: normal;
@@ -109,6 +181,7 @@ ul{
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
+  text-align: center;
 }
 .footer{
   background-color: #212121;
@@ -127,6 +200,7 @@ ul{
   font-weight: 500;
   color: #212121;
   line-height: 1.1;
+  display: flex;
 }
 .nav-item:hover{
   color: #2196f3;
